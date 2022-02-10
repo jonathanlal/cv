@@ -24,11 +24,12 @@ const Layout = ({ children, location }) => {
     animateOnScroll()
   }, [])
   return (
-  <ThemeProvider theme={themes[theme || 'light']}>
+  <ThemeProvider theme={themes[theme || 'dark']}>
     <ResetCSS />
     <GlobalStyle />
     <StyledContainer>
       <Header location={location} onChangeTheme={setTheme} theme={theme} />
+
       <motion.main
         key={location}
         variants={variants}

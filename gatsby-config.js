@@ -34,8 +34,30 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+
+              `Staatliches`,
+          `open sans\:400`
+
+
+
+        ],
+        display: 'swap'
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data/portfolio/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
   ],
 }

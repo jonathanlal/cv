@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'react-awesome-styled-grid'
 import siteConfig from '../../data/siteConfig'
 import { withPrefix } from "gatsby"
 import loadable from '@loadable/component'
-import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
+import Hero from "../components/hero/hero";
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -17,11 +17,18 @@ const Image = styled.img`
   object-position: center center;
   border-radius: 10px;
   box-shadow: 24px 47px 79px -21px rgba(0,0,0,0.51);
+  margin-bottom: 0;
+`
+const Desc = styled.p`
+margin-top:0;
+  text-align: center;
+
 `
 
 const JobCard = styled.a`
   text-decoration: none;
   color: inherit;
+  margin-bottom: 0;
 
   ${({ href }) => href && css`
     &:hover ${Image}{
@@ -40,11 +47,10 @@ const Portfolio = ({ className, location }) => {
         title={title}
         keywords={keywords}
       />
-
-      <Hero
-        heroImg={withPrefix('/images/pierre-chatel-innocenti-W5INoOK-5eI-unsplash.jpeg')}
-        title={title}
-      />
+        <Hero
+            heroImg={siteConfig.siteCover}
+            title={title}
+        />
 
       <Wrapper className={className}>
         <Container className="page-content" fluid>
@@ -60,7 +66,7 @@ const Portfolio = ({ className, location }) => {
                   target="_blank"
                 >
                   <Image src={withPrefix(job.image)} />
-                  <p>{job.description}</p>
+                  <Desc>{job.description}</Desc>
                 </JobCard>
               </Col>
             ))}

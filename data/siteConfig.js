@@ -1,17 +1,28 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Jonathan!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
+  siteTitle: 'Home',
+  siteDescription: `Jonathan CV`,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
   authorName: 'Jonathan Laliberte',
   stackOverflowUsername: '5360672',
   githubUsername: 'jonathanlal',
   authorAvatar: '/images/avatar.jpg',
-  authorDescription: `Conscientious, creative and adaptable individual with high drive and initiative.
-Excellent team player who can be trusted with delegated responsibility and is
-able to focus on set objectives, as well as multi-task, while working in
-pressurized environments. <br ><br >
-Seeks to commit to a position with growth potential over the long-term.
-Full-time work is preferable and is also willing to relocate.`,
+  authorDescription: `
+My name is Jonathan Laliberte and I have been
+programming for almost 9 years now. My main focus
+has been web applications on the frontend but I am also
+comfortable on the backend. 
+<br ><br >
+
+Conscientious, creative and adaptable individual with
+high drive and initiative. Team player who can be trusted
+with delegated responsibility and is able to focus on set
+objectives, as well as multi-task, while working in pressurized environments. <br ><br >
+
+
+Seeking to commit to a position with growth potential
+over the long-term. Full-time work is preferable and is
+also willing to relocate.
+`,
   skills: [
     {
       name: 'Java',
@@ -23,11 +34,7 @@ Full-time work is preferable and is also willing to relocate.`,
     },
     {
       name: 'PHP',
-      level: 55
-    },
-    {
-      name: 'SQL',
-      level: 70
+      level: 65
     },
     {
       name: 'C#',
@@ -35,48 +42,36 @@ Full-time work is preferable and is also willing to relocate.`,
     },
     {
       name: 'Python',
-      level: 40
+      level: 60
     },
     {
       name: 'Go',
-      level: 40
+      level: 35
     },
-    {
-      name: 'C++',
-      level: 30
-    },
+
     {
       name: 'HTML/CSS',
-      level: 95
+      level: 97
     },
     {
       name: 'React',
-      level: 81
+      level: 65
     },
     {
       name: 'Angular',
-      level: 76
+      level: 62
     },
     {
       name: 'Next.js',
-      level: 84
-    },
-
-
-
-    {
-      name: 'Git',
-      level: 80
-    },
-
-
-    {
-      name: 'Google Cloud Platform',
-      level: 70
+      level: 74
     },
     {
-      name: 'Azure',
+      name: 'GraphQL & SQL',
       level: 65
+    },
+    {
+      name: 'GCP & Azure',
+      level: 80
     },
 
     /* more skills here */
@@ -84,104 +79,185 @@ Full-time work is preferable and is also willing to relocate.`,
   jobs: [
     /* more jobs here */
     {
-      company: "Domus Venari",
-      begin: {
-        month: 'JAN',
-        year: '2022'
-      },
-      duration: 'Present',
-      occupation: "Lead developer",
-      description: `Currently building a new site for a real estate agency together with two other developers`,
-    },
-    {
       company: "Hetrafi",
       begin: {
-        month: 'NOV',
-        year: '2021'
+        month: 'SEP',
+        year: '2020'
       },
       duration: '1 yr 1 month',
-      occupation: "Senior Fullstack Developer/Project Manager",
-      description: `Hetrafi was a startup play-to-earn gaming platform. They originally had a team in India who built their site, however it was unmanageable. 
-      We were creating a new site while maintaining the old one, I was in charge or recruiting, DevOps, coordinating between team members, code review and choosing what technologies we would use. Unfortunately a couple months before completing the site, the company ran out of funds.`,
+      occupation: "Fullstack Developer",
+      description: `I was in charge or recruiting, DevOps, coordinating
+between team members, code review and choosing what
+technologies we would use for the new site we were
+developing. We were also maintaining the old site which
+was built using different technologies.`,
     },  {
-      company: "Cash-for-gold",
+      company: "Cash-for-gold.co.uk",
       begin: {
-        month: 'DEC',
+        month: 'MAR',
         year: '2020'
       },
       duration: '8 months',
-      occupation: "Fullstack developer",
-      description: "Cash-for-gold.co.uk was a company offering to buy gold online over mail. I created a bespoke CRM and website for them."
+      occupation: "Fullstack Developer",
+      description: `Developed a website and CRM for a company that was
+going to start buying gold over mail. The CRM ended up
+being a lot more work than the website - with mail-merge
+capability, profitability reporting, uploading of images,
+history of changes, filtering of leads etc.`
+    }, {
+      company: "The Web Devil",
+      begin: {
+        month: 'JUL',
+        year: '2019'
+      },
+      duration: '8 months',
+      occupation: "Fullstack Developer",
+      description: `Implementing websites based on client requirements.
+Tasks included search engine optimizations, emailing
+systems for receiving and sending, issuing logins for new
+clients, managing property feeds and setting up landing
+pages.`
     }, {
       company: "Domus Venari",
       begin: {
-        month: 'Feb',
-        year: '2019'
+        month: 'FEB',
+        year: '2018'
       },
-      duration: '1 yr 3 months',
-      occupation: "Fullstack developer",
-      description: "Developing, implementing and monitoring solutions for in-house CRM. Creating landing pages for marketing initiatives. Assistant network manager for 60 networked computers over three offices."
-    }, {
+      duration: '15 months',
+      occupation: "Fullstack Developer",
+      description: `Developing, implementing and monitoring solutions for
+in-house CRM. Creating landing pages for marketing
+initiatives. Making changes to their site and agent portal,
+integrating Facebook webhook leads into their CRM,
+importing blog posts, setting up email campaigns.`
+    },
+    {
       company: "Wistla",
       begin: {
-        month: 'SEP',
+        month: 'MAR',
         year: '2017'
       },
       duration: '7 months',
-      occupation: "Front end developer",
-      description: "Developing web pages following design concepts from design team."
+      occupation: "Frontend Developer",
+      description: `(part-time) Developing web pages following design concepts from
+design team, connecting SMS service on sign ups,
+making the pages mobile friendly. Creating landing pages
+for various different marketing campaigns.`
     },
     {
       company: "Diversified Resorts",
       begin: {
-        month: 'Aug',
-        year: '2016'
+        month: 'SEP',
+        year: '2015'
       },
-      duration: '1 yr 5 months',
-      occupation: "Front end developer",
-      description: "Developing landing pages and making design changes to their website"
+      duration: '17 months',
+      occupation: "Frontend Developer",
+      description: `Some tasks included optimizing the user experience,
+making pages mobile friendly, fixing browser
+compatibility problems, search engine optimizations,
+developing landing pages and making general design
+changes to their website.`
     },
+
     {
       company: "Rooftop Cafe",
       begin: {
         month: 'JUN',
         year: '2015'
       },
-      duration: '6 months',
+      duration: '5 months',
       occupation: "Kitchen Porter",
-      description: "(part-time) Washing dishes, preparing desserts/appetizers & stock upkeep"
+      description: `(part-time) Washing dishes fast enough to not hold back the kitchen,
+preparing desserts/appetizers, collecting plates & stock
+upkeep.`
     },
     {
       company: "MailBoxes Etc",
       begin: {
-        month: 'Nov',
-        year: '2014'
+        month: 'NOV',
+        year: '2013'
       },
-      duration: '1 year',
+      duration: '11 months',
       occupation: "Store Clerk",
-      description: "(part-time) Dealing with mail services: domestic and international. Packaging & Cashier."
+      description: `(part-time) Dealing with mail services: domestic and international.
+Packaging & Cashier. Preparing different types of mail for
+daily pickup. Stock upkeep, taking calls to help with
+inquiries.`
     },
     {
       company: "Sunset Beach Club",
       begin: {
-        month: 'Mar',
+        month: 'JUN',
         year: '2011/2'
       },
       duration: 'Summers',
       occupation: "IT support",
-      description: "(part-time) Shadowing head of department in computer repairs, software updating and other computer related issues experienced by department staff on a day to day basis."
+      description: `(part-time) Shadowing head of department in computer repairs,
+software updating, computer reformatting and other
+computer related issues experienced by department staff
+on a day to day basis.`
     },
   ],
   portfolio: [
     {
-      image: "/images/gatsby-starter-cv.png",
-      description: "CV: Jonathan Laliberte",
-      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
+      image: "/images/asktmk.png",
+      description: "AskTMK: Search Engine",
+      url: "https://asktmk.com/"
     },
     {
-      image: "/images/awesome-grid.png",
-      description: "Responsive grid for ReactJS",
-      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
+      image: "/images/wiki.png",
+      description: "AskTMK: Wiki",
+      url: "https://asktmk.com/wiki/"
+    },
+    {
+      image: "/images/thewebdevil.png",
+      description: "The Web Devil",
+      url: "https://thewebdevil.com/"
+    },
+    {
+      image: "/images/thelalibertecenter.png",
+      description: "Psychologist website",
+      url: "https://thelalibertecenter.com/"
+    },
+    {
+      image: "/images/cashforgold.png",
+      description: "Cash for gold website",
+      url: "#"
+    },
+    {
+      image: "/images/cashforgold-crm.png",
+      description: "Cash for gold CRM",
+      url: "#"
+    },
+    {
+      image: "/images/patricio-martin.png",
+      description: "Architect website",
+      url: "#"
+    },
+    {
+      image: "/images/kathrinski.png",
+      description: "Clothing store website",
+      url: "#"
+    },
+    {
+      image: "/images/diversified.png",
+      description: "Real estate website",
+      url: "#"
+    },
+    {
+      image: "/images/sponex.png",
+      description: "Covid products website",
+      url: "#"
+    },
+    {
+      image: "/images/innovaziona.png",
+      description: "Architect/construction website",
+      url: "#"
+    },
+    {
+      image: "/images/workutils.png",
+      description: "Work smart, not hard",
+      url: "#"
     },
     /* more portifolio items here */
   ],
@@ -191,12 +267,12 @@ Full-time work is preferable and is also willing to relocate.`,
     github: "https://github.com/jonathanlal",
     email: "jonathanmlaliberte@gmail.com"
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
+  siteUrl: 'https://cv-delta-two.vercel.app/',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
-  background_color: '#ffffff',
-  theme_color: '#25303B',
+  googleAnalyticsId: 'G-BC0RNVB70H',
+  background_color: '#F5F8FA',
+  theme_color: '#E1E8ED',
   fontColor: "#000000cc",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',

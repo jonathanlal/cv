@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaStackOverflow } from "react-icons/fa"
 import { config } from 'react-awesome-styled-grid';
 import siteConfig from '../../../data/siteConfig'
 
@@ -13,7 +13,7 @@ const Link = styled(({ className, icon: Icon, color, ...props }) => (
   >
     <Icon color={color} size={32} />
   </a>
-)).attrs(props => ({ color: props.theme.colors.primary }))`
+)).attrs(props => ({ color: props.theme.colors.fontColor }))`
   & + & {
     margin-left: 24px;
   }
@@ -24,14 +24,16 @@ const Footer = ({ className }) => {
     stackoverflow,
     linkedin,
     github,
+      email,
   } = siteConfig.social
   return (
     <footer className={className}>
-      {`© ${new Date().getFullYear()} ${siteConfig.authorName}`}
+      {`© ${new Date().getFullYear()} ${siteConfig.authorName} | CV`}
       <div>
-        {github && <Link href={github} icon={FaGithub} />}
         {stackoverflow && <Link href={stackoverflow} icon={FaStackOverflow} />}
-        {linkedin && <Link href={linkedin} icon={FaLinkedin} />}
+        {github && <Link href={github} icon={FaGithub} />}
+        {email && <Link href={`mailto:${siteConfig.social.email}`} icon={FaEnvelope} />}
+
       </div>
     </footer>
   )

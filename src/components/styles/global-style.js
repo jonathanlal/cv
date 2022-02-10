@@ -5,4 +5,13 @@ export default createGlobalStyle`
   body {
     color: ${({ theme }) => theme.colors.fontColor}
   }
+  h1{
+
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+
+  }
+  p{
+
+  }
 `

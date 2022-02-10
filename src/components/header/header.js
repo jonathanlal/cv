@@ -6,6 +6,7 @@ import { withPrefix } from "gatsby"
 import Switch from 'react-switch'
 import siteConfig from '../../../data/siteConfig'
 
+
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -45,7 +46,7 @@ const HeaderLink = styled(Link)`
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.navbar};
   border: 0;
   margin: 0;
   margin-right: 0.5rem;
@@ -55,7 +56,7 @@ const HeaderLink = styled(Link)`
   z-index: 10;
   ${({ active }) => active && css`
     pointer-events: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.linkHover};
   `}
 `
 
@@ -101,7 +102,7 @@ const Header = ({ location, onChangeTheme, theme }) => {
             onChange={onChangeTheme} 
             checked={theme === 'light'}
             onColor="#626262"
-            offColor="#212121"
+            offColor="#474747"
             checkedIcon={<IconWrapper><FiSun color="yellow" /></IconWrapper>}
             uncheckedIcon={<IconWrapper><FiMoon color="white" /></IconWrapper>}
           />

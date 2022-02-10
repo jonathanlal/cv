@@ -10,7 +10,7 @@ export const useDarkMode = () => {
   const [theme, setTheme] = useState(websiteTheme)
 
   const toggleTheme = () => {
-    window.__setPreferredTheme(websiteTheme === 'dark' ? 'light' : 'dark')
+    window.__setPreferredTheme(websiteTheme === 'light' ? 'dark' : 'light')
   }
   useEffect(() => {
     setTheme(window.__theme)
