@@ -51,13 +51,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/data/portfolio/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `data`,
+    //     path: `${__dirname}/data/portfolio/`,
+    //     ignore: [`**/\.*`], // ignore files starting with a dot
+    //   },
+    // },
   ],
 }

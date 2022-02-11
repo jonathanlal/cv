@@ -267,10 +267,10 @@ on a day to day basis.`
     github: "https://github.com/jonathanlal",
     email: "jonathanmlaliberte@gmail.com"
   },
-  siteUrl: 'https://cv-delta-two.vercel.app/',
+  siteUrl: 'https://cv-jonathanlal.vercel.app/',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'G-BC0RNVB70H',
+  googleAnalyticsId: 'G-14C2JX8C10',
   background_color: '#F5F8FA',
   theme_color: '#E1E8ED',
   fontColor: "#000000cc",
