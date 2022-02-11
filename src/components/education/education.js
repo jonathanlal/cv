@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Col, config, Container, Row} from 'react-awesome-styled-grid'
-import siteConfig from '../../../data/siteConfig'
-import About from "../about/about";
-import Skills from "../skills/skills";
+import {Col, Container, Row} from 'react-awesome-styled-grid'
 
 
 const Education = ({ className }) => (
@@ -63,6 +60,5 @@ const Education = ({ className }) => (
 export default styled(Education)`
     p{
       line-height: 0;
-      
     }
     `
