@@ -235,6 +235,11 @@ on a day to day basis.`
       url: "https://www.diversifiedresorts.com/"
     },
     {
+      image: "/images/diversified-agents.png",
+      description: "Agents/members portal",
+      url: "https://www.diversifiedresorts.com/"
+    },
+    {
       image: "/images/thewebdevil.png",
       description: "The Web Devil",
       url: "https://thewebdevil.com/"

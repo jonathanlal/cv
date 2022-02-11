@@ -55,6 +55,7 @@ const Portfolio = ({ className, location }) => {
       <Wrapper className={className}>
         <Container className="page-content" fluid>
             <p>Some of these links may no longer be active - however I can run you through any of them from my local machine.</p>
+            <br/>
           <Row>
             {portfolio.map(job => (
               <Col
