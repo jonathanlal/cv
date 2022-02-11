@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Home',
+  siteTitle: 'Jonathan Laliberte',
   siteDescription: `Jonathan CV`,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
   authorName: 'Jonathan Laliberte',
@@ -279,7 +279,7 @@ on a day to day basis.`
   icon: 'src/assets/gatsby-icon.png',
   headerLinks: [
     {
-      label: 'Home',
+      label: 'CV',
       url: '/',
     },
     {

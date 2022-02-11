@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaEnvelope, FaStackOverflow } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaStackOverflow, FaFileDownload } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 import { withPrefix } from "gatsby"
 import loadable from '@loadable/component'
+import cv from '../../static/Jonathan_Laliberte_CV.pdf'
 
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
@@ -29,13 +30,14 @@ margin:0;
 `
 
 
+
 const Home = ({ className, location }) => {
   // validate siteConfig settings
   if (siteConfig.googleAnalyticsId === 'UA-000000000-1') {
     console.error('WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.');
   }
 
-  const title = siteConfig.siteTitle
+  const title = 'CV'
   const { keywords } = siteConfig
   return (
     <Layout location={location}>
@@ -50,6 +52,7 @@ const Home = ({ className, location }) => {
       />
 
       <Wrapper className={className} >
+
         <Container className="page-content" fluid>
           <Row>
             <Col xs={4} className='avatar'>
@@ -59,13 +62,13 @@ const Home = ({ className, location }) => {
                 alt='user avatar'
               />
 
-              <StyledP><strong>Nationality</strong>: Norwegian & American</StyledP>
-              <StyledP><strong>Languages</strong>: Norwegian, English & Spanish</StyledP>
-              <StyledP><strong>Age</strong>: 30 years old</StyledP>
+              <StyledP><strong>Nationality</strong>: Norwegian/American</StyledP>
+              <StyledP><strong>Languages</strong>: Norwegian & Spanish</StyledP>
+              <StyledP><strong>Age</strong>: 30 (Oct 1991)</StyledP>
               <br/>
 
               <div className="social">
-                {siteConfig.social.stackoverflow && <a className="social-link twitter" href={siteConfig.social.stackoverflow}>
+                {siteConfig.social.stackoverflow && <a className="social-link stackoverflow" href={siteConfig.social.stackoverflow}>
                   <FaStackOverflow className="social-icon" size="32" />
                 </a>}
                 {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
@@ -74,6 +77,9 @@ const Home = ({ className, location }) => {
                 {siteConfig.social.email && <a className="social-link email" href={`mailto:${siteConfig.social.email}`}>
                   <FaEnvelope className="social-icon" size="32" />
                 </a>}
+                <a className="social-link download" href={cv} download>
+                <FaFileDownload className="social-icon" size="30"  href='http://localhost:8000/'/>
+                </a>
               </div>
             </Col>
           </Row>
@@ -110,7 +116,7 @@ export default styled(Home)`
   }
 
   .avatar__image {
-    box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 15px 0 rgba(0,0,0,0.75);
     max-width: 200px;
     border-radius: 100px;
     margin: 0 auto 24px;
@@ -126,12 +132,16 @@ export default styled(Home)`
     color: #555;
   }
 
-  a.social-link.twitter:hover {
-    color: #1da1f2;
+  a.social-link.stackoverflow:hover {
+    color: #f48225;
   }
 
   a.social-link.github:hover {
-    color: #24292e;
+    color: #6e5494;
+  }
+
+  a.social-link.download:hover {
+    color: #5cb85c;
   }
 
   a.social-link.linkedin:hover {

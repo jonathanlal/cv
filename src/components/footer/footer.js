@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaGithub, FaEnvelope, FaStackOverflow } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaStackOverflow, FaFileDownload } from "react-icons/fa"
 import { config } from 'react-awesome-styled-grid';
 import siteConfig from '../../../data/siteConfig'
+import cv from '../../../static/Jonathan_Laliberte_CV.pdf'
 
 const Link = styled(({ className, icon: Icon, color, ...props }) => (
   <a 
@@ -24,6 +25,7 @@ const Footer = ({ className }) => {
     stackoverflow,
     github,
       email,
+
   } = siteConfig.social
   return (
     <footer className={className}>
@@ -32,7 +34,7 @@ const Footer = ({ className }) => {
         {stackoverflow && <Link href={stackoverflow} icon={FaStackOverflow} />}
         {github && <Link href={github} icon={FaGithub} />}
         {email && <Link href={`mailto:${siteConfig.social.email}`} icon={FaEnvelope} />}
-
+        <Link icon={FaFileDownload} href={cv} download/>
       </div>
     </footer>
   )
