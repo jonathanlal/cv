@@ -22,7 +22,6 @@ const Link = styled(({ className, icon: Icon, color, ...props }) => (
 const Footer = ({ className }) => {
   const {
     stackoverflow,
-    linkedin,
     github,
       email,
   } = siteConfig.social
