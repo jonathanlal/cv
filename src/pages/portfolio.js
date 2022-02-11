@@ -16,7 +16,7 @@ const Image = styled.img`
   object-fit: cover;
   object-position: center center;
   border-radius: 10px;
-  box-shadow: 24px 47px 79px -21px rgba(0,0,0,0.51);
+  //box-shadow: 24px 47px 79px -21px rgba(0,0,0,0.51);
   margin-bottom: 0;
 `
 const Desc = styled.p`
@@ -54,6 +54,7 @@ const Portfolio = ({ className, location }) => {
 
       <Wrapper className={className}>
         <Container className="page-content" fluid>
+            <p>Some of these links may no longer be active - however I can run you through any of them from my local machine.</p>
           <Row>
             {portfolio.map(job => (
               <Col
@@ -63,7 +64,6 @@ const Portfolio = ({ className, location }) => {
                 <JobCard
                   as={job.url ? "a" : "div"}
                   href={job.url}
-                  target="_blank"
                 >
                   <Image src={withPrefix(job.image)} />
                   <Desc>{job.description}</Desc>

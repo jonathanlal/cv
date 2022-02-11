@@ -210,16 +210,6 @@ on a day to day basis.`
       url: "https://asktmk.com/wiki/"
     },
     {
-      image: "/images/thewebdevil.png",
-      description: "The Web Devil",
-      url: "https://thewebdevil.com/"
-    },
-    {
-      image: "/images/thelalibertecenter.png",
-      description: "Psychologist website",
-      url: "https://thelalibertecenter.com/"
-    },
-    {
       image: "/images/cashforgold.png",
       description: "Cash for gold website",
       url: "#"
@@ -235,13 +225,28 @@ on a day to day basis.`
       url: "#"
     },
     {
-      image: "/images/kathrinski.png",
-      description: "Clothing store website",
-      url: "#"
+      image: "/images/thelalibertecenter.png",
+      description: "Psychologist website",
+      url: "https://thelalibertecenter.com/"
     },
     {
       image: "/images/diversified.png",
       description: "Real estate website",
+      url: "https://www.diversifiedresorts.com/"
+    },
+    {
+      image: "/images/thewebdevil.png",
+      description: "The Web Devil",
+      url: "https://thewebdevil.com/"
+    },
+    {
+      image: "/images/scandikmilano.png",
+      description: "Home products website",
+      url: "http://www.scandikmilano.com/"
+    },
+    {
+      image: "/images/kathrinski.png",
+      description: "Clothing store website",
       url: "#"
     },
     {
@@ -255,8 +260,13 @@ on a day to day basis.`
       url: "#"
     },
     {
+      image: "/images/domus.png",
+      description: "Domus Designs agents",
+      url: "#"
+    },
+    {
       image: "/images/workutils.png",
-      description: "Work smart, not hard",
+      description: "Work automation",
       url: "#"
     },
     /* more portifolio items here */
