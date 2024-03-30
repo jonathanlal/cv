@@ -39,6 +39,16 @@ const Home = ({ className, location }) => {
 
   const title = 'CV'
   const { keywords } = siteConfig
+
+  const birthdate = new Date('1991-10-01'); //not real day of birth
+const currentDate = new Date();
+
+let age = currentDate.getFullYear() - birthdate.getFullYear();
+const m = currentDate.getMonth() - birthdate.getMonth();
+
+if (m < 0 || (m === 0 && currentDate.getDate() < birthdate.getDate())) {
+    age--; 
+}
   return (
     <Layout location={location}>
       <SEO
@@ -64,7 +74,7 @@ const Home = ({ className, location }) => {
 
               <StyledP><strong>Nationality</strong>: Norwegian/American</StyledP>
               <StyledP><strong>Languages</strong>: Norwegian & Spanish</StyledP>
-              <StyledP><strong>Age</strong>: 30 (Oct 1991)</StyledP>
+              <StyledP><strong>Age</strong>: {age} (Oct 1991)</StyledP>
               <br/>
 
               <div className="social">
