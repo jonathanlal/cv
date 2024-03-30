@@ -30,7 +30,7 @@ also willing to relocate.
     },
     {
       name: 'Javascript',
-      level: 85
+      level: 95
     },
     {
       name: 'PHP',
@@ -63,7 +63,7 @@ also willing to relocate.
     },
     {
       name: 'Next.js',
-      level: 74
+      level: 94
     },
     {
       name: 'GraphQL & SQL',
@@ -73,11 +73,25 @@ also willing to relocate.
       name: 'GCP & Azure',
       level: 80
     },
+    {
+      name: 'Dockers & Kubernetes',
+      level: 71
+    },
 
     /* more skills here */
   ],
   jobs: [
     /* more jobs here */
+    {
+      company: "Hurtigruten",
+      begin: {
+        month: 'March',
+        year: '2022'
+      },
+      duration: 'Ongoing',
+      occupation: "Senior Front-end Developer",
+      description: `Started off on the B2B portal, built with pure React and a backend in .NET. Now on the B2C team maintaining the old site and developing a new one in Next.js.`,
+    },
     {
       company: "Hetrafi",
       begin: {
