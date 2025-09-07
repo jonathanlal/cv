@@ -20,8 +20,7 @@ objectives, as well as multi-task, while working in pressurized environments. <b
 
 
 Seeking to commit to a position with growth potential
-over the long-term. Full-time work is preferable and is
-also willing to relocate.
+over the long-term. Full-time work is preferable.
 `,
   skills: [
     {
@@ -38,11 +37,11 @@ also willing to relocate.
     },
     {
       name: 'C#',
-      level: 55
+      level: 75
     },
     {
       name: 'Python',
-      level: 60
+      level: 80
     },
     {
       name: 'Go',
@@ -55,7 +54,7 @@ also willing to relocate.
     },
     {
       name: 'React',
-      level: 65
+      level: 85
     },
     {
       name: 'Angular',
@@ -88,9 +87,13 @@ also willing to relocate.
         month: 'March',
         year: '2022'
       },
-      duration: 'Ongoing',
+      duration: '3 yrs 5 months',
       occupation: "Senior Front-end Developer",
-      description: `Started off on the B2B portal, built with pure React and a backend in .NET. Now on the B2C team maintaining the old site and developing a new one in Next.js.`,
+      description: `Started off on the B2B portal, built with vanilla React and 
+a backend in .NET. Then moved on to the B2C team 
+maintaining the old site and developing a new one in 
+Next.js. Also was responsible for various different 
+systems such as map routing data & AI translations.`,
     },
     {
       company: "Hetrafi",
@@ -213,6 +216,28 @@ on a day to day basis.`
     },
   ],
   portfolio: [
+
+    {
+      image: "/images/uutter2.jpg",
+      description: "Uutter - AI Transcription Social Media",
+      url: "https://uutter.com/"
+    },
+    {
+      image: "/images/kantos2.jpg",
+      description: "Kantos AI - Agentic Lead Qualification",
+      url: "https://kantos.ai/"
+    },
+
+    {
+      image: "/images/goatranscribe2.jpg",
+      description: "Goatranscribe - AI Transcriptions",
+      url: "https://goatranscribe.com/"
+    },
+        {
+      image: "/images/frostbyte2.jpg",
+      description: "FrostByte Component Library",
+      url: "https://frostbyte-ui.vercel.app/"
+    },
     {
       image: "/images/asktmk.png",
       description: "AskTMK: Search Engine",

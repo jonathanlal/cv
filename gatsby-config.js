@@ -9,9 +9,10 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+  `gatsby-plugin-react-helmet`,
+  // Temporarily disabled image processing plugins to avoid schema errors
+  // `gatsby-transformer-sharp`,
+  // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
